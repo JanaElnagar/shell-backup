@@ -8,8 +8,8 @@
 BASH_SCRIPT=./backupd.sh  # path to bash script provided\
 SRC_DIR= /path/to/source\
 BACKUP_DIR=/path/to/backupfile\
-INTERVAL= <number of seconds between backups> \
-MAX_BACKUPS= <max number of backups> 
+INTERVAL= \<number of seconds between backups> \
+MAX_BACKUPS= \<max number of backups> 
 
 3- To begin the backup process, run "make backup"
 
