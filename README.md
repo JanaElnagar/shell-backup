@@ -1,21 +1,21 @@
-## Automated File Backup System ##
+# Automated File Backup System #
 
-# User guide
+## User guide
 
-1- This system contains two main files, backupd.sh and Makefile
+1- This system contains two main files, backupd.sh and Makefile\
 2- to run the system you must provide the fllowing parameters in the Makefile:
 
-BASH_SCRIPT=./backupd.sh  # path to bash script provided
-SRC_DIR= /path/to/source
-BACKUP_DIR=/path/to/backupfile
-INTERVAL= < number of seconds between backups >
-MAX_BACKUPS= < max number of backups >
+BASH_SCRIPT=./backupd.sh  # path to bash script provided\
+SRC_DIR= /path/to/source\
+BACKUP_DIR=/path/to/backupfile\
+INTERVAL= <number of seconds between backups> \
+MAX_BACKUPS= <max number of backups> 
 
 3- To begin the backup process, run "make backup"
 
 -------------------------------------------------------
 
-# System overview
+## System overview
 
 - Makefile creates a backup folder if not already created
 - then it runs backupd.sh and provides its parameters
@@ -28,7 +28,7 @@ and saves the new info into "directory-info.last"
 
 -------------------------------------------------------
  
- # Directories after running system:
+ ## Directories after running system:
  
  backup      directory-info.last  Makefile   source
 backupd.sh   directory-info.new   README.md
